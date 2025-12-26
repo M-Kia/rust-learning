@@ -3,7 +3,7 @@ fn first_word(sentence: &String) -> &str {
   let first_word = words.nth(0);
   match first_word {
     Some(word) => word,
-    None => sentence,
+    None => "",
   }
 }
 
@@ -11,9 +11,7 @@ fn takes_ownership(s: String) {
   let _s1 = s;
 }
 
-fn makes_copy(n: i32) -> i32 {
-  n.clone()
-}
+fn makes_copy(n: i32) -> i32 { n }
 
 fn append_world(s: &mut String) {
   s.push_str(" world");
