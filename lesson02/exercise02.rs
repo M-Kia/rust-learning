@@ -1,2 +1,3 @@
-// Placeholder for Lesson 2 exercises
-// Implement your solutions here based on lesson02/README.md
+fn first_word(sentence: &String) -> &str {
+  let space_index = sentence;
+}
